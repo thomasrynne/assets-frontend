@@ -1,0 +1,71 @@
+/**
+ * A way to display tabular data of up to three elements.
+ * At desktop and tablet breakpoints, displayed as one row
+ * with three columns; and at the mobile breakpoint,
+ * one column with three rows.
+ */
+
+/** each data entry */
+.tabular-data__entry {
+  position: relative;
+  margin-top: 10px;
+  padding: 15px 0 10px;
+}
+
+/** first position */
+.tabular-data__heading {
+  @include bold-16;
+  display: inline-block;
+  @include media(tablet) {
+    width: 38%;
+  }
+}
+
+/** details element in first position */
+.tabular-data__details {
+    @include core-16;
+    summary {
+      @include bold-16;
+    }
+}
+
+/** second position */
+.tabular-data__data-1 {
+  @include core-16;
+  display: block;
+  margin: 10px 0;
+  @include media(tablet) {
+    display: inline-block;
+    margin: 0 0 0 8px;
+    left: 40%;
+    width: 47%;
+  }
+}
+/** need to use absolute positioning where the heading uses a details element */
+.tabular-data__data-1--after-details {
+  @include media(tablet) {
+    position: absolute;
+    margin: 10px 0;
+    top: 5px;
+  }
+}
+
+/** third position */
+.tabular-data__data-2 {
+  @include core-16;
+  display: block;
+  margin: 10px 0;
+  @include media(tablet) {
+    display: inline-block;
+    margin: 0;
+    right: 5px;
+  }
+}
+/** need to use absolute positioning where the heading uses a details element */
+.tabular-data__data-2--after-details {
+  @include media(tablet) {
+    position: absolute;
+    margin: 10px 0;
+    top: 5px;
+  }
+}

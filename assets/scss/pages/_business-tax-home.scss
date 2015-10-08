@@ -37,6 +37,7 @@
       @include core-16;
     }
   }
+
   .main__section--divider-top {
     margin-top: 25px;
     padding-top: 10px;
@@ -218,66 +219,6 @@
 
   .spacing--bottom {
     padding-bottom: 10px;
-  }
-
-
-  .manage-acct__entry {
-    position: relative;
-    margin-top: 10px;
-    padding: 15px 0 10px;
-  }
-
-  .manage-acct__heading {
-    display: inline-block;
-    @include media(tablet) {
-      width: 38%;
-    }
-  }
-
-  .manage-acct__details {
-    @include core-16;
-    summary {
-      @include bold-16;
-    }
-    margin-bottom: 0;
-  }
-
-  .manage-acct__data {
-    @include core-16;
-    display: block;
-    margin: 10px 0;
-    @include media(tablet) {
-      display: inline-block;
-      margin: 0 0 0 8px;
-      left: 40%;
-      width: 47%;
-    }
-  }
-  .manage-acct__data--after-details {
-    @include media(tablet) {
-      position: absolute;
-      margin: 10px 0;
-      top: 5px;
-    }
-  }
-
-  .manage-acct__action-link {
-    @include core-16;
-    display: block;
-    margin: 10px 0;
-    @include media(tablet) {
-      display: inline-block;
-      margin: 0;
-      right: 5px;
-      width: 10%;
-    }
-  }
-  .manage-acct__action-link--after-details {
-    @include media(tablet) {
-      position: absolute;
-      margin: 10px 0;
-      top: 5px;
-    }
   }
 
 }
