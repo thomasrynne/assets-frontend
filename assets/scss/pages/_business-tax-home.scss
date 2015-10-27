@@ -220,6 +220,11 @@
     padding-bottom: 10px;
   }
 
+  // rename and refactor into _tabular-data.scss
+
+  .manage-acct__section + .manage-acct__section {
+    margin-top: 3em;
+  }
 
   .manage-acct__entry {
     position: relative;
@@ -251,6 +256,10 @@
       left: 40%;
       width: 47%;
     }
+    li {
+      @include core-16;
+      margin: 0;
+    }
   }
   .manage-acct__data--after-details {
     @include media(tablet) {
@@ -276,5 +285,6 @@
       top: 5px;
     }
   }
+  // end _tabular-data.scss refactor
 
 }
